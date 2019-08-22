@@ -15,10 +15,7 @@
     ],
     "interface-name": false,
     "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      140
-    ],
+    "max-line-length": false,
     "member-access": false,
     "member-ordering": [
       true,
@@ -31,7 +28,7 @@
         ]
       }
     ],
-    "no-consecutive-blank-lines": false,
+    "no-consecutive-blank-lines": true,
     "no-console": [
       true,
       "debug",
@@ -55,11 +52,14 @@
       "as-needed"
     ],
     "object-literal-sort-keys": false,
-    "ordered-imports": false,
+    "ordered-imports": true,
     "quotemark": [
       true,
       "single"
     ],
+    "no-conditional-assignment": false,
+    "no-string-literal": false,
+    "curly": false,
     "trailing-comma": false,
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
