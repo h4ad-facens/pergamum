@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="input-group mb-3 p-5">
+  <div class="input-group mb-3 pt-3 p-sm-5">
     <input #searchInput (keydown.enter)="performSearch(searchInput.value)" type="text" class="form-control" placeholder="Digite o nome do livro" aria-label="Digite o nome do livro" aria-describedby="button-addon2">
     <div class="input-group-append">
       <button (click)="performSearch(searchInput.value)" [disabled]="isSearching" class="btn btn-info" type="button" id="button-addon2">{{ isSearching ? 'Pesquisando...' : 'Pesquisar' }}</button>
@@ -7,7 +7,7 @@
   </div>
 
   <div class="d-flex flex-wrap">
-    <div class="card w-25" *ngFor="let book of listBook">
+    <div class="card col-sm-12 col-md-6 col-xl-3" *ngFor="let book of listBook">
       <img [src]="book.img" class="card-img-top" alt="A imagem de capa do livro">
       <div class="card-body p-0">
         <table class="table table-bordered table-dark">
